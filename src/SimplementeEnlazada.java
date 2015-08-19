@@ -22,7 +22,8 @@ public class SimplementeEnlazada<E> extends ListaAbstracta<E> {
 	public void addFirst(E value) {
 		// TODO Auto-generated method stub
 		head = new Node<E>(value,head); 
-		count++;	
+		count++;
+		
 	}
 
 	/* (non-Javadoc)
