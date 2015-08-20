@@ -7,11 +7,11 @@ import java.util.Vector;
  *
  * @param <E>
  */
-public class Stack<E> implements ADTStack<E>{
+public class StackVector<E> extends StackAbstracta<E>{
     
     protected Vector<E> pila;
     
-    public Stack(){
+    public StackVector(){
         pila = new Vector<E>();
     }
     
@@ -27,10 +27,6 @@ public class Stack<E> implements ADTStack<E>{
     
     public E peek(){
         return pila.get(size() - 1);
-    }
-    
-    public boolean isEmpty(){
-        return size() == 0;
     }
     
     public int size(){

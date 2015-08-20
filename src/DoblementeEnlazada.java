@@ -64,7 +64,9 @@ public class DoblementeEnlazada<E> extends ListaAbstracta<E> {
 	@Override
 	public void addLast(E value) {
 		// TODO Auto-generated method stub
+		
 		tail = new DoubleNode<E>(value,null,tail);
+		
 		if(head == null){
 			head = tail;
 		}

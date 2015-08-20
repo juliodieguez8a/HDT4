@@ -12,7 +12,7 @@ public class Calculadora<P> implements ADTCalculadora{
     
     private String datosPosfix; 
     private double Resultado;
-    private Stack<Double> numeros= new Stack<Double>();
+    private StackListas<Double> numeros= new StackListas<Double>(3);
    
     
     /* (non-Javadoc)
