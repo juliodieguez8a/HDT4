@@ -22,12 +22,6 @@ public class StackListas<E> extends StackAbstracta<E> {
 	}
 
 	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-        return size() == 0;
-	}
-
-	@Override
 	public void push(E x) {
 		// TODO Auto-generated method stub
 		pila.addLast(x);
