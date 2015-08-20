@@ -1,5 +1,5 @@
 
-public abstract class ListaAbstracta<E> implements listaEnlazada<E> {
+public abstract class ListaAbstracta<E> implements InterfazLista<E> {
 
 	protected int count;
 	
