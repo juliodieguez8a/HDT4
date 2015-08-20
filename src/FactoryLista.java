@@ -9,12 +9,12 @@
  * @author Admin
  */
 public class FactoryLista {
-    public listaEnlazada getLista (int x){
+    public ADTStack getLista (int x){
         if (x==1)
-            return new Circular();
+            return new StackListas(1);
         if (x==2)
-            return new SimplementeEnlazada();
+        	return new StackListas(2);
         else 
-            return new DoblementeEnlazada();
+        	return new StackListas(3);
     }
 }
