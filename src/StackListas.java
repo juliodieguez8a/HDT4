@@ -4,21 +4,18 @@ public class StackListas<E> extends StackAbstracta<E> {
 
     protected ListaAbstracta<E> pila;
     protected int tipo;
+    protected Factory f = new Factory();
     
     public StackListas(int type){
     	tipo=type;
-    	if (tipo==1){pila = new Circular<E>();}
-    	if (tipo==2){pila = new SimplementeEnlazada<E>();}
-    	if (tipo==3){pila = new DoblementeEnlazada<E>();}
+    	pila= f.getLista(tipo);
     	
     }
     
 	@Override
 	public void empty() {
 		// TODO Auto-generated method stub
-    	if (tipo==1){pila = new Circular<E>();}
-    	if (tipo==2){pila = new SimplementeEnlazada<E>();}
-    	if (tipo==3){pila = new DoblementeEnlazada<E>();}
+    	pila= f.getLista(tipo);
 	}
 
 	@Override
@@ -40,7 +37,7 @@ public class StackListas<E> extends StackAbstracta<E> {
 	}
 
 	@Override
-	public E peek() throws Exception {
+	public E peek() {
 		// TODO Auto-generated method stub
 		return pila.getLast();
 	}

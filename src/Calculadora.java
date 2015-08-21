@@ -4,33 +4,27 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-/**
- *
- * @author Admin
- */
+
 public class Calculadora<P> implements ADTCalculadora{
     
     private String datosPosfix; 
     private double Resultado;
-    private StackListas<Double> numeros= new StackListas<Double>(3);
-   
+    private StackAbstracta<Double> numeros;
+    Factory factoryP = new Factory(); 
     
-    /* (non-Javadoc)
-     * @see ADTCalculadora#readFile(java.lang.String)
-     */
+    public Calculadora(int op1, int op2){
+        numeros = factoryP.getStack(op1,op2);
+    }
+    
     public void readFile(String file) throws FileNotFoundException {
-        // TODO Auto-generated method stub
-        // tiene que tener el valor: file = "datos.txt"
         FileReader fr = new FileReader(file);
         BufferedReader bf = new BufferedReader(fr);
 
         try {
                 datosPosfix = bf.readLine();
         } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
-        }
-        
+        }       
         System.out.println(datosPosfix);		
 	
     }
