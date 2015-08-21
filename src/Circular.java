@@ -12,8 +12,9 @@ public class Circular<E> extends ListaAbstracta<E>  {
 		count = 0;
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#addFirst(java.lang.Object)
+
+	/**
+	 * @see InterfazLista#addFirst(java.lang.Object)
 	 */
 	@Override
 	public void addFirst(E value) {
@@ -30,8 +31,9 @@ public class Circular<E> extends ListaAbstracta<E>  {
 		count++;
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#removeFirst()
+
+	/**
+	 * @see InterfazLista#removeFirst()
 	 */
 	@Override
 	public E removeFirst() {
@@ -49,8 +51,9 @@ public class Circular<E> extends ListaAbstracta<E>  {
 		return temp.value();
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#removeLast()
+
+	/**
+	 * @see InterfazLista#removeLast()
 	 */
 	@Override
 	public E removeLast() {
@@ -71,8 +74,9 @@ public class Circular<E> extends ListaAbstracta<E>  {
 		return temp.value();
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#addLast(java.lang.Object)
+
+	/**
+	 * @see InterfazLista#addLast(java.lang.Object)
 	 */
 	@Override
 	public void addLast(E value) {
@@ -81,8 +85,9 @@ public class Circular<E> extends ListaAbstracta<E>  {
 		tail = tail.next();
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#getFirst()
+
+	/**
+	 * @see InterfazLista#getFirst()
 	 */
 	@Override
 	public E getFirst() {
@@ -90,8 +95,8 @@ public class Circular<E> extends ListaAbstracta<E>  {
 		return tail.next().value();
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#getLast()
+	/**
+	 * @see InterfazLista#getLast()
 	 */
 	@Override
 	public E getLast() {
@@ -99,8 +104,9 @@ public class Circular<E> extends ListaAbstracta<E>  {
 		return tail.value();
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#contains(java.lang.Object)
+
+	/**
+	 * @see InterfazLista#contains(java.lang.Object)
 	 */
 	@Override
 	public boolean contains(E value) {

@@ -1,5 +1,10 @@
 //import javax.xml.soap.Node;
 
+/**
+ * @author Julio
+ *
+ * @param <E>
+ */
 public class DoblementeEnlazada<E> extends ListaAbstracta<E> {
 	
 
@@ -17,8 +22,8 @@ public class DoblementeEnlazada<E> extends ListaAbstracta<E> {
 	}
 
 
-	/* (non-Javadoc)
-	 * @see ADTLista#addFirst(java.lang.Object)
+	/**
+	 * @see InterfazLista#addFirst(java.lang.Object)
 	 */
 	@Override
 	public void addFirst(E value) {
@@ -31,8 +36,9 @@ public class DoblementeEnlazada<E> extends ListaAbstracta<E> {
 		count ++;
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#removeFirst()
+
+	/**
+	 * @see InterfazLista#removeFirst()
 	 */
 	@Override
 	public E removeFirst() {
@@ -43,8 +49,9 @@ public class DoblementeEnlazada<E> extends ListaAbstracta<E> {
 		return temp.value();
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#removeLast()
+
+	/**
+	 * @see InterfazLista#removeLast()
 	 */
 	@Override
 	public E removeLast() {
@@ -61,6 +68,10 @@ public class DoblementeEnlazada<E> extends ListaAbstracta<E> {
 		return temp.value();
 	}
 
+
+	/**
+	 * @see InterfazLista#addLast(java.lang.Object)
+	 */
 	@Override
 	public void addLast(E value) {
 		// TODO Auto-generated method stub
@@ -74,8 +85,9 @@ public class DoblementeEnlazada<E> extends ListaAbstracta<E> {
 		
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#getFirst()
+
+	/**
+	 * @see InterfazLista#getFirst()
 	 */
 	@Override
 	public E getFirst() {
@@ -83,8 +95,9 @@ public class DoblementeEnlazada<E> extends ListaAbstracta<E> {
 		return head.value();
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#getLast()
+
+	/**
+	 * @see InterfazLista#getLast()
 	 */
 	@Override
 	public E getLast() {
@@ -92,8 +105,9 @@ public class DoblementeEnlazada<E> extends ListaAbstracta<E> {
 		return tail.value();
 	}
 
-	/* (non-Javadoc)
-	 * @see ADTLista#contains(java.lang.Object)
+
+	/**
+	 * @see InterfazLista#contains(java.lang.Object)
 	 */
 	@Override
 	public boolean contains(E value) {

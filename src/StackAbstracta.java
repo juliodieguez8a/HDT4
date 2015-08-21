@@ -10,6 +10,9 @@
  */
 public abstract class StackAbstracta<E> implements ADTStack<E> {
     
+		/**
+    	 * @see ADTStack#isEmpty()
+    	 */
     	public boolean isEmpty(){
             return size() == 0;
         }

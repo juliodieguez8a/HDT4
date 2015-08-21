@@ -1,10 +1,11 @@
 
 import java.io.FileNotFoundException;
-/**
- *
- * @author Admin
- */
+
 import java.util.Scanner;
+/**
+ * @author Julio
+ *
+ */
 public class main {
     
     

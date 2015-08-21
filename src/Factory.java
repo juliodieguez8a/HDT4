@@ -9,20 +9,29 @@
  * @author Admin
  */
 public class Factory {
+    /**
+     * @param op1
+     * @param op2
+     * @return
+     */
     public StackAbstracta getStack (int op1, int op2){
-        if (op1==1)
-            return new StackVector();
-        
         if (op1==2)
-            return new StackArrayList();
+            return new StackVector<Double>();
         
         if (op1==3)
-        	return new StackListas(op2);
+            return new StackArrayList<Double>();
+        
+        if (op1==1)
+        	return new StackListas<Double>(op2);
         
 		return null;
         
     }
 	
+    /**
+     * @param x
+     * @return
+     */
     public ListaAbstracta getLista (int x){
         if (x==1)
             return new Circular();

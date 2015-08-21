@@ -5,6 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * @author Julio
+ *
+ * @param <P>
+ */
 public class Calculadora<P> implements ADTCalculadora{
     
     private String datosPosfix; 
@@ -12,10 +17,17 @@ public class Calculadora<P> implements ADTCalculadora{
     private StackAbstracta<Double> numeros;
     Factory factoryP = new Factory(); 
     
+    /**
+     * @param op1
+     * @param op2
+     */
     public Calculadora(int op1, int op2){
         numeros = factoryP.getStack(op1,op2);
     }
     
+    /** (non-Javadoc)
+     * @see ADTCalculadora#readFile(java.lang.String)
+     */
     public void readFile(String file) throws FileNotFoundException {
         FileReader fr = new FileReader(file);
         BufferedReader bf = new BufferedReader(fr);
@@ -29,7 +41,8 @@ public class Calculadora<P> implements ADTCalculadora{
 	
     }
     
-    /* (non-Javadoc)
+
+    /** (non-Javadoc)
      * @see ADTCalculadora#calcular()
      */
     public double calcular(){
