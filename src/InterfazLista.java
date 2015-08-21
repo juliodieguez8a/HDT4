@@ -6,9 +6,6 @@
  */
 public interface InterfazLista<E> {
 
-	/**
-	 * @return
-	 */
 	int size();
 
 	/**
